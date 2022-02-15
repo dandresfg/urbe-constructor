@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/flex.css">
+    <title>Pensum</title>
+</head>
+<body>
+    <main>
+        <section>
+            <header class="flex center">
+                <h1>Constructor de pensum</h1>
+            </header>
+            <form action="#" class="flex center column wrap" id="form">
+
+                <div class="input p-m select-input">
+                    <select name="trimestre" id="trimestres">
+                        <option value="1">Primer Trimestre</option>
+                        <option value="2">Segundo Trimestre</option>
+                        <option value="3">Tercer Trimestre</option>
+                        <option value="4">Cuarto Trimestre</option>
+                        <option value="5">Quinto Trimestre</option>
+                        <option value="6">Sexto Trimestre</option>
+                        <option value="7">Septimo Trimestre</option>
+                        <option value="8">Octavo Trimestre</option>
+                        <option value="9">Noveno Trimestre</option>
+                        <option value="10">Decimo Trimestre</option>
+                        <option value="11">Onceavo Trimestre</option>
+                        <option value="12">Doceavo Trimestre</option>
+                    </select>
+                    <select name="materia" id="materias">
+                    </select>
+                </div>
+
+                <div class="flex column w-100">
+                    <div class="flex center middle my">
+                        <div class="mx-m">
+                            <input type="radio" name="cursando" id="cursando" value="0" checked />
+                            <label for="cursando">Cursando</label>
+                        </div>
+                        <div class="mx-m">
+                            <input type="radio" name="cursando" id="terminada" value="1" />
+                            <label for="terminada">Terminada</label>
+                        </div>
+                        <div class="flex" id="nota">
+                            <input type="number" id="inputnota" class="nota" name="nota" min="1" max="20" placeholder="nota" />
+                        </div>
+                        <div class="flex center mx-m">
+                            <button type="submit" id="boton">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section>
+            <div class="flex center">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>Primero</th>
+                            <th>Segundo</th>
+                            <th>Tercero</th>
+                            <th>Cuarto</th>
+                            <th>Quinto</th>
+                            <th>Sexto</th>
+                            <th>Septimo</th>
+                            <th>Octavo</th>
+                            <th>Noveno</th>
+                            <th>Decimo</th>
+                            <th>Onceavo</th>
+                            <th>Doceavo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablebody">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
